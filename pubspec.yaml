@@ -22,6 +22,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_displaymode: ^0.6.0
+  flutter_launcher_icons: ^0.13.1
   flutter_localizations:
     sdk: flutter
   google_fonts: ^6.1.0
@@ -41,7 +42,6 @@ dependencies:
   youtube_explode_dart: ^2.0.2
 
 dev_dependencies:
-  flutter_launcher_icons: ^0.13.1
   flutter_native_splash: ^2.3.4
   flutter_test:
     sdk: flutter
@@ -58,6 +58,13 @@ flutter:
     - assets/db/playlists.db.json
     - assets/fonts/roboto/
     - assets/fonts/paytone/
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  remove_alpha_ios: true
 
 flutter_native_splash:
   color: '#ffffff'
